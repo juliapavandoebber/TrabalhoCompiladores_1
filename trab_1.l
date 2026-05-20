@@ -24,60 +24,59 @@ ERRO            .
 %%
     /*regras*/
 {IDENTIFICADOR}    {
-    printf("digito: %d\n", yytext);
+    printf("identificador: %d\n", yytext);
 }
 
 {RESERVADA}    {
-    printf("digito: %d\n", yytext);
+    printf("palavra reservada: %d\n", yytext);
 }
 
 {INTEIRO}    {
-    printf("digito: %d\n", yytext);
+    printf("inteiro: %d\n", yytext);
 }
 
 {FLOAT}    {
-    printf("digito: %d\n", yytext);
+    printf("float: %d\n", yytext);
 }
 
 {STRING}    {
-    printf("digito: %d\n", yytext);
+    printf("string: %d\n", yytext);
 }
 
 {CHAR}    {
-    printf("digito: %d\n", yytext);
+    printf("char: %d\n", yytext);
 }
 
 {OPERADORARIT}    {
-    printf("digito: %d\n", yytext);
+    printf("operador aritmetico: %d\n", yytext);
 }
 
 {OPERADORREL}    {
-    printf("digito: %d\n", yytext);
+    printf("operador relacional: %d\n", yytext);
 }
 
 {OPERADORLOG}    {
-    printf("digito: %d\n", yytext);
+    printf("operador logico: %d\n", yytext);
 }
 
-
 {OPERADORATRIB}    {
-    printf("digito: %d\n", yytext);
+    printf("operador atribuicao: %d\n", yytext);
 }
 
 {ESCOPO}    {
-    printf("digito: %d\n", yytext);
+    printf("escopo: %d\n", yytext);
 }
 
 {SEPARADORES}    {
-    printf("digito: %d\n", yytext);
+    printf("separadores: %d\n", yytext);
 }
 
 {COMENTARIO}    {
-    printf("digito: %d\n", yytext);
+    printf("comentario: %d\n", yytext);
 }
 
 {ERRO}    {
-    printf("digito: %d\n", yytext);
+    printf("erroneous: %d\n", yytext);
 }
 %%
 
