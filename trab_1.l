@@ -3,12 +3,11 @@
 %}
 
     //definicoes LEX
-DIGITO          [0-9]
-NATURAIS        [0-9]+
-INTEIROS        ("+"|"-"){NATURAIS}
-REAIS           [0-9]*\.[0-9]+
-LETRA           [a-zA-Z]
-IDENTIFICADOR   {LETRA}({LETRA}|{DIGITO}|"_")*
+NUMERO          [0-9]+
+PALAVRA         [a-zA-Z]+
+
+IDENTIFICADOR   {PALAVRA}({PALAVRA}|{NUMERO}|"_")*
+RESERVADA       ("")
 OPERADORARIT    ("+"|"-"|"\\"|":"|"x"|"\."|"*")
 OPERADORLOG     ("&&"|"||"|"!")
 OPERADORREL     ("=="|"!="|">"|"<"|">="|"<=")
