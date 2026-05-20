@@ -51,27 +51,32 @@ ERRO            .
     printf("digito: %d\n", yytext);
 }
 
-{DIGITO}    {
+{OPERADORREL}    {
     printf("digito: %d\n", yytext);
 }
 
-{DIGITO}    {
+{OPERADORLOG}    {
     printf("digito: %d\n", yytext);
 }
 
-{DIGITO}    {
+
+{OPERADORATRIB}    {
     printf("digito: %d\n", yytext);
 }
 
-{DIGITO}    {
+{ESCOPO}    {
     printf("digito: %d\n", yytext);
 }
 
-{DIGITO}    {
+{SEPARADORES}    {
     printf("digito: %d\n", yytext);
 }
 
-{DIGITO}    {
+{COMENTARIO}    {
+    printf("digito: %d\n", yytext);
+}
+
+{ERRO}    {
     printf("digito: %d\n", yytext);
 }
 %%
